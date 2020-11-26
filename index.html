@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		p{
+			margin: 0;
+		}
+		#redbox{
+			color: blue;
+			background-color: red;
+			width: 300px;
+			height: 300px;
+		}
+		#box2{
+			background-color: blue;
+			width: 300px;
+			height: 50px;
+		}
+		#box3{
+			background-color: green;
+			width: 300px;
+			height: 150px;
+		}
+	</style>
+</head>
+<body onunload="unload()">
+	<div id="redbox">
+		<!-- <p id="p" onclick="this.innerHTML='p 标签的点击事件'">this is a image</p> -->
+		<p id="p" onclick="checkp(this)">this is a image</p>
+		<!-- <img id="Img" src="timg (9).jpg" alt=""> -->
+	</div>
+	<!-- <button type="button" onclick="document.getElementById('redbox').style.backgroundColor='green'">check</button> -->
+	<button type="button" onclick="checkbutton()">check</button>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<div id="box2" onmouseover="mOver(this)" onmouseout="mOut(this)">I'm go out~</div>
+	<br>
+	<div id="box2" onmousedown="mDown(this)" onmouseup="mUp(this)" onclick="">Check this~</div>
+	<br>
+	<div id="box3">监听事件</div>
+	<button id="button2">check</button>
+	<br>
+	<br>
+	<p>计算乘法</p>
+	<input id="inputa" type="text" value="">
+	<input id="inputb" type="text" value="">
+	<button id="commit">=</button>
+	<input id="result" type="text">
+
+	<br>
+	<br>
+
+	<div id="box4">
+		<p id="p1">这是一个段落。</p>
+		<p id="p2">这是第二个段落。</p>
+		<br>
+		<p>点击p标签变红</p>
+		<button id="button3">check</button>
+		<p>点击p标签变黑</p>
+		<button id="button4">check</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<table border="2" width="300px">
+		<thead>
+			<tr>
+				<th>123</th>
+				<th>123</th>
+				<th>123</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>123</td>
+				<td>123</td>
+				<td>123</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>123</td>
+				<td>123</td>
+				<td>123</td>
+			</tr>
+		</tfoot>
+	</table>
+	<script src="js/index.js"></script>
+</body>
+</html>
