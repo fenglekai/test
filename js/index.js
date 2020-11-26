@@ -140,3 +140,6 @@ function btchange2() {
 
 var iNodeList = document.querySelectorAll('p');
 console.log(iNodeList);
+
+let num = Number('898');
+console.log(num);
