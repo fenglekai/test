@@ -110,12 +110,16 @@ var elep2 = document.getElementById('p2');
 elebox4.replaceChild(para, elep2);
 
 //获取元素对象
-var allp = document.getElementsByTagName('p');
+let allp = document.getElementsByTagName('p');
+let qsp = document.querySelectorAll('#p');
+
+console.log(window);
+
 //所有数据
 console.log(allp);
 //第二条数据
 console.log(allp[1]);
-//数据的个数
+//数据的长度
 console.log(allp.length);
 //bt改变元素对象css属性
 document.getElementById('button3').addEventListener('click', function(){
